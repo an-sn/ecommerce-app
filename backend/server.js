@@ -1,5 +1,5 @@
-const { connectToDb, client } = require('./app/db/db-connect');
-
+const { connectToDb } = require('./utils/db');
+const { Member } = require('./app/models/schemas/member')
 async function main() {
     try {
       await connectToDb();
