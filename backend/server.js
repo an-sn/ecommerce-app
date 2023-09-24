@@ -1,7 +1,13 @@
-const { connectToDb, client } = require('./db/db-connect');
+const { connectToDb, client } = require('./app/db/db-connect');
 
-function main(){
-    connectToDb();
+async function main() {
+    try {
+      await connectToDb();
+      console.log('Starting backend...');
+    }
+    catch (error) {
+      console.error('Error connecting to the database:', error);
+    }
 }
 
 main();
