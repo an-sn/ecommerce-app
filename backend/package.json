@@ -2,5 +2,6 @@
   "dependencies": {
     "mongodb": "^6.1.0",
     "mongoose": "^7.5.2"
-  }
+  },
+  "type": "module"
 }

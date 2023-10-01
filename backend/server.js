@@ -1,5 +1,6 @@
-const { connectToDb } = require('./utils/db');
-const { Member } = require('./models/schemas/member')
+import connectToDb from './utils/db.js';
+import Member from './models/schemas/member.js';
+
 async function main() {
     try {
       await connectToDb();

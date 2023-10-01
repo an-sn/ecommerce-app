@@ -1,9 +1,9 @@
-const mongoose = require('mongoose');
+import { connect } from 'mongoose';
 const libraryDbUri = "mongodb://127.0.0.1:27017/library";
 
 async function connectToDb(){
     try {
-        await mongoose.connect(libraryDbUri);
+        await connect(libraryDbUri);
         console.log('Connected to library DB!')
     }
     catch (error) {
@@ -11,6 +11,4 @@ async function connectToDb(){
     }
 }
 
-module.exports = {
-    connectToDb
-}
+export default connectToDb;
