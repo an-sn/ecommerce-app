@@ -1,4 +1,4 @@
-import { connect } from 'mongoose';
+import { mongoose, connect } from 'mongoose';
 const libraryDbUri = "mongodb://127.0.0.1:27017/library";
 
 async function connectToDb(){
@@ -10,5 +10,5 @@ async function connectToDb(){
         console.log('Error while connecting to DB')
     }
 }
-
-export default connectToDb;
+const db = mongoose.connection;
+export {connectToDb, db};

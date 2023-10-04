@@ -1,5 +1,6 @@
-import connectToDb from './utils/db.js';
+import {connectToDb, db} from './utils/db.js';
 import Member from './models/schemas/member.js';
+import Book from './models/schemas/books.js';
 
 async function main() {
     try {
