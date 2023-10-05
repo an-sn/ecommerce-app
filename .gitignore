@@ -1,1 +1,4 @@
 .DS_Store
+backend/tags
+library.books.json
+books.csv
