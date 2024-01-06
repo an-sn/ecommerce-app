@@ -9,9 +9,9 @@ const router = express.Router();
 connectToDb()
   .then(() => {
     app.listen(port, router, ()  => {
-      console.log("Started backed on port:", port);
-      router.use('/', booksRouter);
+      console.log("Started backend on port:", port);
       app.use('/api', router);
+      router.use('/', booksRouter);
     });
   })
   .catch((error) => {
