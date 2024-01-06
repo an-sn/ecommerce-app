@@ -2,3 +2,4 @@
 backend/tags
 library.books.json
 books.csv
+frontend/node_modules/*
